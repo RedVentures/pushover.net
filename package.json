@@ -1,7 +1,7 @@
 {
   "author": "Garrett Johnson",
-  "name": "pushover",
-  "description": "pushover.net client for node",
+  "name": "pushover.net",
+  "description": "alternative pushover.net client for node",
   "tags": [ "pushover.net", "pushover client", "push notifications" ],
   "version": "0.0.1",
   "repository": {
