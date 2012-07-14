@@ -8,7 +8,7 @@ Client library for sending IOS and Android push notifications with [Pushover](ht
 *****
 
 ```shell
-npm install node-pushover
+npm install pushover.net
 ```
 
 ## Usage
