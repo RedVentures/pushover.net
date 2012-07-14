@@ -1,0 +1,24 @@
+{
+  "author": "Garrett Johnson",
+  "name": "pushover",
+  "description": "pushover.net client for node",
+  "tags": [ "pushover.net", "pushover client", "push notifications" ],
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/gjohnson/node-pushover"
+  },
+  "bugs": {
+    "url": "http://github.com/gjohnson/node-pushover/issues"
+  },
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "dependencies": {
+    "request": "2.9.x"
+  },
+  "devDependencies": {
+    "mocha": "1.3.0"
+  },
+  "main": "./index"
+}
