@@ -13,7 +13,7 @@ npm install pushover.net
 Send single messages and invoke a callback afterwards.
 
 ```javascript
-var pushover = require('pushover');
+var pushover = require('pushover.net');
 
 pushover({
   user: 'user',
@@ -29,7 +29,7 @@ pushover({
 Create a single message and send it later with `end()` with or with out a callback.
 
 ```javascript
-var pushover = require('pushover');
+var pushover = require('pushover.net');
 
 var po = pushover({
   user: 'user',
@@ -45,7 +45,7 @@ po.end();
 Queue up a bunch of messages with the same configuration and send them all at once.
 
 ```javascript
-var pushover = require('pushover');
+var pushover = require('pushover.net');
 
 var po = pushover({
   user: 'user',
@@ -65,7 +65,7 @@ Queue up a bunch of messages but with each having a custom configuration which w
 the initial configuration.
 
 ```javascript
-var pushover = require('pushover');
+var pushover = require('pushover.net');
 
 var po = pushover({
   user: 'user',
