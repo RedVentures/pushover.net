@@ -1,7 +1,3 @@
-
-
-# node-pushover
-
 Client library for sending IOS and Android push notifications with [Pushover](https://pushover.net/).
 
 ## Install
@@ -14,7 +10,7 @@ npm install pushover.net
 ## Usage
 *****
 
-Send single messages and invoke a callback aftewards.
+Send single messages and invoke a callback afterwards.
 
 ```javascript
 var pushover = require('pushover');
@@ -30,7 +26,7 @@ pushover({
 
 *****
 
-Send a single message and send it later with `end()` with or with out a callback.
+Create a single message and send it later with `end()` with or with out a callback.
 
 ```javascript
 var pushover = require('pushover');
