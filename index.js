@@ -135,14 +135,20 @@ Pushover.prototype.end = function(callback) {
       uri: this.endpoint,
       method: 'POST',
       timeout: this.timeout,
-      json: opts
+      form: opts
     }, respond);
 
     function respond(err, res, body) {
       if (err) return callback((failed = err));
-      if (--count === 0) {
-        callback(null, body);
+
+      try {
+        body = JSON.parse(body);
+      } catch (e) {
+        err = e;
       }
+
+      if (0 === body.status) err = body.errors[0];
+      --count || callback(err || null, body);
     }
   }
 

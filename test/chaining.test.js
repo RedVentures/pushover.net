@@ -24,7 +24,7 @@ describe('.pushover chaining', function() {
 
   it('should send all messages', function(done) {
     po.end(function(err, reply) {
-      assert.ifError(err);
+      if (err) return done(err);
       assert.equal(reply.status, 1);
       assert.equal(po.outbox.length, 0);
       done();

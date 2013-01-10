@@ -13,7 +13,7 @@ describe('.pushover w/ message and callback', function() {
     }, sent);
 
     function sent(err, reply) {
-      assert.ifError(err);
+      if (err) return done(err);
       assert.equal(reply.status, 1);
       done();
     }
@@ -30,7 +30,7 @@ describe('.pushover w/ message and callback', function() {
     }, sent);
 
     function sent(err, reply) {
-      assert.ifError(err);
+      if (err) return done(err);
       assert.equal(reply.status, 1);
       done();
     }
