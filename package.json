@@ -3,7 +3,7 @@
   "name": "pushover.net",
   "description": "alternative pushover.net client for node",
   "tags": [ "pushover.net", "pushover client", "push notifications" ],
-  "version": "0.0.5",
+  "version": "0.0.6",
   "repository": {
     "type": "git",
     "url": "http://github.com/redventures/pushover.net"
