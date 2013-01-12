@@ -94,6 +94,8 @@ Pushover.prototype.push = function(msg) {
  */
 
 Pushover.prototype.end = function(callback) {
+  callback = callback || function(){};
+
   var outbox = this.outbox;
   var count = outbox.length;
 
@@ -179,14 +181,8 @@ function type(value) {
 
 function override(a, b) {
   var dupe = {};
-
   for (var key in a) {
-    if (b.hasOwnProperty(key)) {
-      dupe = b[key];
-    } else {
-      dupe = a[key];
-    }
+    dupe[key] = 'undefined' == typeof b[key]? a[key]: b[key];
   }
-
   return dupe;
 }
