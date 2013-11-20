@@ -1,4 +1,3 @@
-
 /**
  * Deps.
  */
@@ -49,6 +48,7 @@ function Pushover(opts, callback) {
   this.url = opts.url;
   this.url_title = opts.url_title;
   this.priority = opts.priority;
+  this.sound = opts.sound;
   this.timestamp = opts.timestamp;
   this.timeout = opts.timeout;
 
@@ -121,6 +121,7 @@ Pushover.prototype.end = function(callback) {
       url: this.url,
       url_title: this.url_title,
       priority: this.priority,
+      sound: this.sound,
       timestamp: this.timestamp
     };
 
